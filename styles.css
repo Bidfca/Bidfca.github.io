@@ -68,6 +68,15 @@ html {
     }
 }
 
+.location {
+    display: flex;
+    margin-top: 2vh;
+}
+
+.fa-map-marker {
+    margin-right: 5px;
+}
+
 .photo {
     border-radius: 50%;
     width: 150px;
