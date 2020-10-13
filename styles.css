@@ -13,7 +13,6 @@ html {
 
 .welcome-page {
     height: 100vh;
-    min-height: 300px;
     background-image: url("gif.gif");
     background-color: black;
     background-position: 0% -50%;
@@ -66,24 +65,50 @@ html {
 
 .photo {
     border-radius: 50%;
-    max-width: 150px;
-    margin-bottom: 10vh;
+    width: 150px;
+    margin: 8vh 0px;
 }
 
 .about {
     height: 100vh;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif; 
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
 }
 
-.container ul {
-    margin: 20px 0px;
-}
-.container {
+.description {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 800px;
-    padding-top: 10vh;
-    margin: auto;
 }
+
+.description ul {
+    margin: 2vh 0;
+}
+.contact {
+    height: 60px;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact-details {
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    color: white;
+  }
+
+.contact-details:hover {
+    transform: translateY(8px);
+  }
