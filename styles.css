@@ -26,22 +26,27 @@ html {
 
 .arrow {
     position: absolute;
-    bottom: 10px;
+    bottom: 13px;
 	width: 0;
 	height: 0;
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
     border-top: 25px solid white;
-    animation: fade-in2 ease 6s;
+    animation: fade-in2 ease 3.5s;
+    transition: transform 0.3s ease-out;
 }
+
+.arrow:hover {
+    transform: translateY(3px);
+  }
 
 .welcome-page > h1 {
     font-family: 'Staatliches', cursive;
     font-size: 6rem;
-    animation: fade-in ease 4s;
+    animation: fade-in ease 2s;
 }
 
-  @keyframes fade-in {
+@keyframes fade-in {
     0% {
       opacity:0;
     }
