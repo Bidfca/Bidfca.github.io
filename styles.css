@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.welcome-page {
+    height: 100vh;
+    min-height: 300px;
+    background-image: url("gif.gif");
+    background-color: black;
+    background-position: 0% -50%;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 10px;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+    border-top: 25px solid white;
+    animation: fade-in2 ease 6s;
+}
+
+.welcome-page > h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 6rem;
+    animation: fade-in ease 4s;
+}
+
+  @keyframes fade-in {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+@keyframes fade-in2 {
+    0% {
+      opacity:0;
+    }
+
+    50% {
+        opacity:0; 
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+.photo {
+    border-radius: 50%;
+    max-width: 150px;
+    margin-bottom: 10vh;
+}
+
+.about {
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container ul {
+    margin: 20px 0px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    padding-top: 10vh;
+    margin: auto;
+}
